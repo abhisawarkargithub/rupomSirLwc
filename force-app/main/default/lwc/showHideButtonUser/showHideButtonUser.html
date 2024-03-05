@@ -1,0 +1,8 @@
+<template>
+<lightning-card title="Current User Details">
+    <template if:false={jsVar}>
+    <lightning-button label="Show" variant="Brand" onclick={HandleClick} ></lightning-button>
+   </template>
+     <p >Current User Name: {currentUser}</p>
+</lightning-card>
+</template>

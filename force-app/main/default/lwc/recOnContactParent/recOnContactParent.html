@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Account Contacts">
+        <template for:each={contacts} for:item="contact">
+            <c-rec-on-contact key={contact.Id} contact={contact} oncontactclick={handleContactClick}></c-rec-on-contact>
+        </template>
+        <template if:true={selectedContact}>
+            <p>Contact Name: {selectedContact.Name}</p>
+        </template>
+    </lightning-card>
+</template>

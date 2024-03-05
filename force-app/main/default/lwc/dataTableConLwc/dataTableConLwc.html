@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Account Datatable">
+        
+        <lightning-datatable key-field="Id"
+        data={Account.data}
+        columns={columns}
+        onsave={hanlderSave}
+        draft-values={draftValues}
+        >
+        </lightning-datatable>
+    </lightning-card>
+    
+</template>
